@@ -9,7 +9,7 @@ const TopNewsSlider = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/news");
+        const response = await axios.get("https://backend-1-b8sg.onrender.com/news");
         setNewsData(response.data.articles); // Assuming the API response contains 'articles' array
         setLoading(false);
       } catch (error) {
