@@ -20,7 +20,7 @@ const StockSimulator = () => {
   const [chartData, setChartData] = useState(null);
 
   const API_URL = "http://localhost:5000/simulate";
-  const SEARCH_API_URL = "http://localhost:5000/search";
+  const SEARCH_API_URL = "https://backend-1-b8sg.onrender.com/search";
 
   const debouncedSearch = (query) => {
     if (query.length > 1) {
