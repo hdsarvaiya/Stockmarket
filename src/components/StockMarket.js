@@ -111,7 +111,7 @@ const StockMarket = () => {
           .map((s) => s.symbol)
           .join(",");
 
-        const response = await axios.get("http://localhost:5000/stocks", {
+        const response = await axios.get("https://backend-1-b8sg.onrender.com/stocks", {
           params: { symbols },
         });
 
